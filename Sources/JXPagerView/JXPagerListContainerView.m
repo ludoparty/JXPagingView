@@ -8,6 +8,8 @@
 
 #import "JXPagerListContainerView.h"
 #import <objc/runtime.h>
+#import "PagerRTLManager.h"
+#import "JXPagerBaseCell.h"
 
 @interface JXPagerListContainerScrollView: UIScrollView <UIGestureRecognizerDelegate>
 @property (nonatomic, assign, getter=isCategoryNestPagingEnabled) BOOL categoryNestPagingEnabled;
@@ -177,12 +179,16 @@
         self.collectionView.bounces = NO;
         self.collectionView.dataSource = self;
         self.collectionView.delegate = self;
-        [self.collectionView registerClass:[UICollectionViewCell class] forCellWithReuseIdentifier:@"cell"];
+        [self.collectionView registerClass:[JXPagerBaseCell class] forCellWithReuseIdentifier:@"cell"];
         if (@available(iOS 10.0, *)) {
             self.collectionView.prefetchingEnabled = NO;
         }
         if (@available(iOS 11.0, *)) {
             self.collectionView.contentInsetAdjustmentBehavior = UIScrollViewContentInsetAdjustmentNever;
+        }
+        if ([PagerRTLManager supportRTL]) {
+            self.collectionView.semanticContentAttribute = UISemanticContentAttributeForceLeftToRight;
+            [PagerRTLManager horizontalFlipView:self.collectionView];
         }
         [self.containerVC.view addSubview:self.collectionView];
         //让外部统一访问scrollView

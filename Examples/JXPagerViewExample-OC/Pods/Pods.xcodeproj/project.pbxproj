@@ -25,6 +25,10 @@
 		21FAFE324EBA9381D8CF835D44DA1907 /* JXCategoryIndicatorTriangleView.m in Sources */ = {isa = PBXBuildFile; fileRef = E4BE5F6C4E2A14F6204070A4C6339C5D /* JXCategoryIndicatorTriangleView.m */; };
 		28756CEF95AC1EECA53D7F6A5BC0F804 /* JXCategoryIndicatorView.m in Sources */ = {isa = PBXBuildFile; fileRef = 4F5B914B473EFC86BB780B18B2090F8D /* JXCategoryIndicatorView.m */; };
 		28E79F819D284FD600822D329C9EC062 /* JXCategoryNumberCellModel.m in Sources */ = {isa = PBXBuildFile; fileRef = ABF1890E42C48BEB53A2340209835C14 /* JXCategoryNumberCellModel.m */; };
+		28F2351727872B420035AED4 /* PagerRTLManager.h in Headers */ = {isa = PBXBuildFile; fileRef = 28F2351527872B420035AED4 /* PagerRTLManager.h */; };
+		28F2351827872B420035AED4 /* PagerRTLManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 28F2351627872B420035AED4 /* PagerRTLManager.m */; };
+		28F2351F27872CB10035AED4 /* JXPagerBaseCell.h in Headers */ = {isa = PBXBuildFile; fileRef = 28F2351D27872CB10035AED4 /* JXPagerBaseCell.h */; };
+		28F2352027872CB10035AED4 /* JXPagerBaseCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 28F2351E27872CB10035AED4 /* JXPagerBaseCell.m */; };
 		293C9909CC59FD4FB21E0CE200D12EDD /* JXCategoryBaseView.m in Sources */ = {isa = PBXBuildFile; fileRef = 66D20C5D34F246057FC012E5F843263A /* JXCategoryBaseView.m */; };
 		2B82B7B076FB22856EA61D998A6613D1 /* JXCategoryDotCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 299B50EA044167B2FB42FBB1D56132BC /* JXCategoryDotCell.m */; };
 		2C28059DF936B8C51D74100BCAD33A40 /* JXPagerListContainerView.h in Headers */ = {isa = PBXBuildFile; fileRef = 00802A1005934163A15E6D6B467E224A /* JXPagerListContainerView.h */; settings = {ATTRIBUTES = (Project, ); }; };
@@ -206,11 +210,15 @@
 		26FDCF2C9D37242B51ACE07DDBABCA53 /* JXCategoryNumberView.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = JXCategoryNumberView.m; path = Sources/Number/JXCategoryNumberView.m; sourceTree = "<group>"; };
 		2857C131C9CC7C97BA4D1B07C1D0A746 /* JXCategoryTitleCell.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = JXCategoryTitleCell.m; path = Sources/Title/JXCategoryTitleCell.m; sourceTree = "<group>"; };
 		28DAEED9256E4BD67BB9EF0B073177A6 /* MJRefresh.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = MJRefresh.xcconfig; sourceTree = "<group>"; };
+		28F2351527872B420035AED4 /* PagerRTLManager.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = PagerRTLManager.h; path = Sources/JXPagerView/PagerRTLManager.h; sourceTree = "<group>"; };
+		28F2351627872B420035AED4 /* PagerRTLManager.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; name = PagerRTLManager.m; path = Sources/JXPagerView/PagerRTLManager.m; sourceTree = "<group>"; };
+		28F2351D27872CB10035AED4 /* JXPagerBaseCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = JXPagerBaseCell.h; path = Sources/JXPagerView/JXPagerBaseCell.h; sourceTree = "<group>"; };
+		28F2351E27872CB10035AED4 /* JXPagerBaseCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; name = JXPagerBaseCell.m; path = Sources/JXPagerView/JXPagerBaseCell.m; sourceTree = "<group>"; };
 		299B50EA044167B2FB42FBB1D56132BC /* JXCategoryDotCell.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = JXCategoryDotCell.m; path = Sources/Dot/JXCategoryDotCell.m; sourceTree = "<group>"; };
 		29FE2DD268FBE41F4DCD84921DF58EB2 /* JXCategoryImageCellModel.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = JXCategoryImageCellModel.m; path = Sources/Image/JXCategoryImageCellModel.m; sourceTree = "<group>"; };
 		2CABC49534EE84209CC5E5414B44404A /* MJRefreshConst.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = MJRefreshConst.m; path = MJRefresh/MJRefreshConst.m; sourceTree = "<group>"; };
 		2D598521270E0DBF1A029988B511C85E /* MJRefreshConfig.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = MJRefreshConfig.h; path = MJRefresh/MJRefreshConfig.h; sourceTree = "<group>"; };
-		2F4A1CCB21DB7EA5A2ACEB11E374FBCA /* libJXPagingView.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; name = libJXPagingView.a; path = libJXPagingView.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		2F4A1CCB21DB7EA5A2ACEB11E374FBCA /* libJXPagingView.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libJXPagingView.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		30DEE6093C553E74C60F7ADE77DA70DC /* JXCategoryTitleImageView.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = JXCategoryTitleImageView.h; path = Sources/TitleImage/JXCategoryTitleImageView.h; sourceTree = "<group>"; };
 		30F6BA9CD70BC7DA67E2F5ACA03A7813 /* MJRefreshStateHeader.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = MJRefreshStateHeader.h; path = MJRefresh/Custom/Header/MJRefreshStateHeader.h; sourceTree = "<group>"; };
 		31512434C6A9A3F9B8C81AE68D792B1F /* JXPagerMainTableView.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = JXPagerMainTableView.m; path = Sources/JXPagerView/JXPagerMainTableView.m; sourceTree = "<group>"; };
@@ -264,7 +272,7 @@
 		7B4870A865B7E664E9A64DE85DE78579 /* JXCategoryNumberCell.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = JXCategoryNumberCell.m; path = Sources/Number/JXCategoryNumberCell.m; sourceTree = "<group>"; };
 		80155F21B16BC48488949DD79C5520E0 /* JXCategoryIndicatorImageView.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = JXCategoryIndicatorImageView.m; path = Sources/Indicator/IndicatorViews/JXCategoryIndicatorImageView.m; sourceTree = "<group>"; };
 		81AAB574A3A3247A76333E43BBF68200 /* JXCategoryTitleCell.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = JXCategoryTitleCell.h; path = Sources/Title/JXCategoryTitleCell.h; sourceTree = "<group>"; };
-		85D03BEC2CA9B2DB28398618379E7744 /* libFDFullscreenPopGesture.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; name = libFDFullscreenPopGesture.a; path = libFDFullscreenPopGesture.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		85D03BEC2CA9B2DB28398618379E7744 /* libFDFullscreenPopGesture.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libFDFullscreenPopGesture.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		86C6D8B4E18AA2D0B24277773C443041 /* UIScrollView+MJRefresh.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "UIScrollView+MJRefresh.h"; path = "MJRefresh/UIScrollView+MJRefresh.h"; sourceTree = "<group>"; };
 		8BEE7BFE329580782EC0E3A0F7D65556 /* JXCategoryNumberView.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = JXCategoryNumberView.h; path = Sources/Number/JXCategoryNumberView.h; sourceTree = "<group>"; };
 		8C9743FA812F63DD26811478315BC2EC /* JXCategoryTitleImageView.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = JXCategoryTitleImageView.m; path = Sources/TitleImage/JXCategoryTitleImageView.m; sourceTree = "<group>"; };
@@ -280,9 +288,9 @@
 		9954D5577B1278A6A138A9C3731C3932 /* JXCategoryImageCell.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = JXCategoryImageCell.m; path = Sources/Image/JXCategoryImageCell.m; sourceTree = "<group>"; };
 		9B9146C510CD2FB2E2E4ECFE75B60E70 /* JXCategoryTitleView.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = JXCategoryTitleView.h; path = Sources/Title/JXCategoryTitleView.h; sourceTree = "<group>"; };
 		9C017C3024D3E93528522DFEC7CD04B4 /* Pods-JXPagerViewExample-OC-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-JXPagerViewExample-OC-dummy.m"; sourceTree = "<group>"; };
-		9D940727FF8FB9C785EB98E56350EF41 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		9D940727FF8FB9C785EB98E56350EF41 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		9DBE92CF69F70B7041598B8D295ECA62 /* MJRefreshBackFooter.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = MJRefreshBackFooter.m; path = MJRefresh/Base/MJRefreshBackFooter.m; sourceTree = "<group>"; };
-		A066BF421D18C243109B85436377B833 /* JXPagingView.podspec */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; lastKnownFileType = text; path = JXPagingView.podspec; sourceTree = "<group>"; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		A066BF421D18C243109B85436377B833 /* JXPagingView.podspec */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; path = JXPagingView.podspec; sourceTree = "<group>"; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		A0E9F88DD1C2740E87F008FBA5ADD15F /* JXCategoryDotCellModel.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = JXCategoryDotCellModel.m; path = Sources/Dot/JXCategoryDotCellModel.m; sourceTree = "<group>"; };
 		A154EF76595A22C011B3C8B71E8DA2C3 /* JXCategoryIndicatorDotLineView.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = JXCategoryIndicatorDotLineView.m; path = Sources/Indicator/IndicatorViews/JXCategoryIndicatorDotLineView.m; sourceTree = "<group>"; };
 		A2C439782D567B6B9550766DCCF0588F /* MJRefresh-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "MJRefresh-dummy.m"; sourceTree = "<group>"; };
@@ -299,12 +307,12 @@
 		B76721F1631BB765402444ADD415505D /* JXCategoryIndicatorView.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = JXCategoryIndicatorView.h; path = Sources/Indicator/JXCategoryIndicatorView.h; sourceTree = "<group>"; };
 		B9B2256655A7ACAD8A9C0CD84DEAEACA /* MJRefreshBackGifFooter.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = MJRefreshBackGifFooter.h; path = MJRefresh/Custom/Footer/Back/MJRefreshBackGifFooter.h; sourceTree = "<group>"; };
 		BA850648C5008FA01888594BB0FBB776 /* MJRefreshConfig.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = MJRefreshConfig.m; path = MJRefresh/MJRefreshConfig.m; sourceTree = "<group>"; };
-		BAB2F59567F95833CFE35F7D25C82FEE /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; path = LICENSE; sourceTree = "<group>"; };
+		BAB2F59567F95833CFE35F7D25C82FEE /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = LICENSE; sourceTree = "<group>"; };
 		BFD57EB283B206C51725ECA3F3A6500F /* JXCategoryIndicatorCell.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = JXCategoryIndicatorCell.m; path = Sources/Indicator/JXCategoryIndicatorCell.m; sourceTree = "<group>"; };
 		C1623D77A02CFB8775F4A97ACEEECA7B /* NSBundle+MJRefresh.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "NSBundle+MJRefresh.m"; path = "MJRefresh/NSBundle+MJRefresh.m"; sourceTree = "<group>"; };
 		C1AB0C5C5F0509962DF82876A422BAF5 /* JXPagerListRefreshView.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = JXPagerListRefreshView.m; path = Sources/JXPagerView/JXPagerListRefreshView.m; sourceTree = "<group>"; };
 		C2D97581008D76AF8D13B1F8EBC79D3A /* JXCategoryViewDefines.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = JXCategoryViewDefines.h; path = Sources/Common/JXCategoryViewDefines.h; sourceTree = "<group>"; };
-		C3A46B03C308EEEB11F2A62BA5D2E8BE /* libJXCategoryView.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; name = libJXCategoryView.a; path = libJXCategoryView.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		C3A46B03C308EEEB11F2A62BA5D2E8BE /* libJXCategoryView.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libJXCategoryView.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		C69AFE96871834B9F1B774D5FC8BD88E /* Pods-JXPagerViewExample-OC-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-JXPagerViewExample-OC-acknowledgements.markdown"; sourceTree = "<group>"; };
 		C7372934085872E95C47C25919E3DC18 /* JXCategoryIndicatorCell.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = JXCategoryIndicatorCell.h; path = Sources/Indicator/JXCategoryIndicatorCell.h; sourceTree = "<group>"; };
 		C9AB899B9F74FE7CBE71CED870FB96D2 /* JXCategoryView.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = JXCategoryView.xcconfig; sourceTree = "<group>"; };
@@ -317,15 +325,15 @@
 		D7EC0A868BA4323D3F3289410480D42C /* JXCategoryTitleVerticalZoomView.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = JXCategoryTitleVerticalZoomView.h; path = Sources/VerticalZoomTitle/JXCategoryTitleVerticalZoomView.h; sourceTree = "<group>"; };
 		DB27343C24515A5C73DD46AEF3C9F2A9 /* JXPagerView.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = JXPagerView.h; path = Sources/JXPagerView/JXPagerView.h; sourceTree = "<group>"; };
 		DCC07BE8D96375E2D44AFE1409FB74DD /* JXPagerListContainerView.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = JXPagerListContainerView.m; path = Sources/JXPagerView/JXPagerListContainerView.m; sourceTree = "<group>"; };
-		DE159CCA1C4921B7CA735288E127E28A /* libPods-JXPagerViewExample-OC.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; name = "libPods-JXPagerViewExample-OC.a"; path = "libPods-JXPagerViewExample-OC.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		DE159CCA1C4921B7CA735288E127E28A /* libPods-JXPagerViewExample-OC.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-JXPagerViewExample-OC.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		DE244E8464F9E97AB0B404D26CA64A08 /* JXCategoryImageView.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = JXCategoryImageView.h; path = Sources/Image/JXCategoryImageView.h; sourceTree = "<group>"; };
 		DEBB1CFD9B6CC38396A251B0A1420D1B /* MJRefreshBackFooter.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = MJRefreshBackFooter.h; path = MJRefresh/Base/MJRefreshBackFooter.h; sourceTree = "<group>"; };
 		E16AF0CB95E04D28BCEEB7E9133FDCCC /* MJRefreshGifHeader.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = MJRefreshGifHeader.h; path = MJRefresh/Custom/Header/MJRefreshGifHeader.h; sourceTree = "<group>"; };
-		E49D6D248DD1CEE584E6776B9164A1B2 /* libMJRefresh.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; name = libMJRefresh.a; path = libMJRefresh.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		E49D6D248DD1CEE584E6776B9164A1B2 /* libMJRefresh.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libMJRefresh.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		E4BE5F6C4E2A14F6204070A4C6339C5D /* JXCategoryIndicatorTriangleView.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = JXCategoryIndicatorTriangleView.m; path = Sources/Indicator/IndicatorViews/JXCategoryIndicatorTriangleView.m; sourceTree = "<group>"; };
 		E79C3548DD9D081564407D83D7DD3164 /* JXCategoryDotCellModel.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = JXCategoryDotCellModel.h; path = Sources/Dot/JXCategoryDotCellModel.h; sourceTree = "<group>"; };
 		E8C599CDC54615E925FCC51B891AF587 /* NSBundle+MJRefresh.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "NSBundle+MJRefresh.h"; path = "MJRefresh/NSBundle+MJRefresh.h"; sourceTree = "<group>"; };
-		EC32DC60A710247D7B63EC185D264E4B /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; path = README.md; sourceTree = "<group>"; };
+		EC32DC60A710247D7B63EC185D264E4B /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 		F03593C90B693AAC57DAB1D1A8299073 /* MJRefreshAutoFooter.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = MJRefreshAutoFooter.h; path = MJRefresh/Base/MJRefreshAutoFooter.h; sourceTree = "<group>"; };
 		F1249F59AF609A1FA89B4F86D1FB41A6 /* JXCategoryTitleImageCellModel.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = JXCategoryTitleImageCellModel.m; path = Sources/TitleImage/JXCategoryTitleImageCellModel.m; sourceTree = "<group>"; };
 		F1282E6BA003BCA041D7E79657C4F4C6 /* JXCategoryIndicatorTriangleView.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = JXCategoryIndicatorTriangleView.h; path = Sources/Indicator/IndicatorViews/JXCategoryIndicatorTriangleView.h; sourceTree = "<group>"; };
@@ -434,7 +442,6 @@
 				948806C3B1FC4CF53D671C250DF9715B /* Resources */,
 				C4BA68E03494EE019A5756719A6E3FA1 /* Support Files */,
 			);
-			name = MJRefresh;
 			path = MJRefresh;
 			sourceTree = "<group>";
 		};
@@ -588,7 +595,6 @@
 				990CD9EF9949BFD09710405CD282D77D /* UIColor+JXAdd.m */,
 				706620F0C1C998E37E8FBCEE28A253FE /* Support Files */,
 			);
-			name = JXCategoryView;
 			path = JXCategoryView;
 			sourceTree = "<group>";
 		};
@@ -609,7 +615,6 @@
 				74F12D564612F7C369E2195AEED4C76C /* UINavigationController+FDFullscreenPopGesture.m */,
 				95C789D3CD2390C261048CD36DED3FA5 /* Support Files */,
 			);
-			name = FDFullscreenPopGesture;
 			path = FDFullscreenPopGesture;
 			sourceTree = "<group>";
 		};
@@ -634,6 +639,10 @@
 				43F844E04E8E41FA6BECABC3D0520AB0 /* JXPagerSmoothView.m */,
 				DB27343C24515A5C73DD46AEF3C9F2A9 /* JXPagerView.h */,
 				6AEDFF7342991509C776F03A8BBCDF80 /* JXPagerView.m */,
+				28F2351527872B420035AED4 /* PagerRTLManager.h */,
+				28F2351627872B420035AED4 /* PagerRTLManager.m */,
+				28F2351D27872CB10035AED4 /* JXPagerBaseCell.h */,
+				28F2351E27872CB10035AED4 /* JXPagerBaseCell.m */,
 			);
 			name = Pager;
 			sourceTree = "<group>";
@@ -765,6 +774,8 @@
 				4465F9F0E9738F94D0414B6DD3A89819 /* JXPagerMainTableView.h in Headers */,
 				D43EC91EAA3186040B4D786C223C4B71 /* JXPagerSmoothView.h in Headers */,
 				F1AA668D585F0888F2184C8A1B08BD90 /* JXPagerView.h in Headers */,
+				28F2351F27872CB10035AED4 /* JXPagerBaseCell.h in Headers */,
+				28F2351727872B420035AED4 /* PagerRTLManager.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -924,6 +935,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				28F2352027872CB10035AED4 /* JXPagerBaseCell.m in Sources */,
+				28F2351827872B420035AED4 /* PagerRTLManager.m in Sources */,
 				83BA02EA1B4D053CDB369C80D15B919C /* JXPagerListContainerView.m in Sources */,
 				1DD4B2036BDD15DFEEE68E00BFD6EA11 /* JXPagerListRefreshView.m in Sources */,
 				F94D9E6B0639156AF76A5DC3F69F7969 /* JXPagerMainTableView.m in Sources */,
